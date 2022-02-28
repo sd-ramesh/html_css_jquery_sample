@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile - PTC Revamp</title>
+    <!--meta-tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/my-profile.css">   
+    <link rel="stylesheet" href="css/common-responsive.css">  
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-xl navbar-dark">
+         <button class="toggler-btn" type="button" data-toggle="collapse">
+         <span class="toggler-icon">
+         <img src="images/dots-toggle.svg">
+         </span>
+         <span class="toggler-icon-mobile d-none">
+         <img src="images/mobile-toggle.svg">
+         </span>
+         <span class="page-header-text d-none">My Profile</span>
+         </button>
+         <a class="navbar-brand desktop-logo" href="#"><img src="images/Logo.png"></a>
+         <a class="navbar-brand mobile-logo d-none " href="#"><img src="images/brand-icon.png"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item  dropdown custom-dropdown active">
+                  <a class="nav-link" href="javascript:void(0)" data-toggle="dropdown">Procurement</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">RFxs & Bids</a>
+                     <a class="dropdown-item" href="#">Purchase Orders</a>
+                     <a class="dropdown-item" href="#">Contracts</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown custom-dropdown">
+                  <a class="nav-link" href="javascript:void(0)" data-toggle="dropdown">Invoicing</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Invoices List</a>
+                     <a class="dropdown-item" href="#">Submit PO/Contract Invoice</a>
+                     <a class="dropdown-item" href="#">Submit NPO Invoice</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Payments</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Reports</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Requests</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Company Profile</a>
+               </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <button class="btn btn-outline-dark my-2 my-sm-0 form-control-feedback" type="submit"><img src="images/search.svg"></button>
+               <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+            </form>
+            <ul class="right-icons d-flex">
+               <li>
+                  <a href="#">
+                  <img src="images/notify.svg">
+                  <span class="numbers">4</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <img src="images/mail.svg">
+                  <span class="numbers">68</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <img src="images/add.svg">
+                  </a>
+               </li>
+               <li class="user-img header-profile-img">
+                  <a href="#">
+                  <img src="images/Avatar.png"><span></span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+<main class="main-content">
+  <section class="profile-page">
+      <div class="container">
+           <div class="profile-main-inner">
+               <div class="profile-top-section">
+                   <div class="profile-image">
+                       <img src="images/profile-image-0.jpg" alt="My Profile Photo" class="pro-image">
+                       <span class="edit-profile edit-bg">
+                           <img src="images/edit-2.svg" alt="Edit Profile Image">
+                       </span>
+                       <span class="remove-image edit-bg">
+                        <img src="images/x.svg" alt="Remove Profile Image">
+                    </span>
+                   </div>
+                   <div class="profile-content">
+                       <div class="profile-right-text">
+                       <h3>Olivia Rhye<span class="dot-active"></span></h3>
+                       <p>oliviarhye@example.com</p>
+                       <span class="open-text"><span class="dot"></span>Adminstrator</span>
+                       </div>
+                       <div class="profile-tabs">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Accounts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Preferences</a>
+                            </li>
+                        </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="profile-tab-content">
+               <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="profile-tab-inner">
+                        <div class="profile-text">
+                            <h3>Profile</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh morbi at aenean molestie et. </p>
+                        </div>
+                        <div class="profile-form">
+                            <form>
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="usr">Full Name</label>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-9">
+                                   <div class="row">
+                                       <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="usr" placeholder="First name">
+                                        </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="usr" placeholder="Last name">
+                                        </div>
+                                       </div>
+                                   </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="usr">Email ID</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="oliviarhye@example.com">
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="usr">Company</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                    <input type="text" id="company" name="Company" placeholder="Some Company Name">
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="usr">Contact Number</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="044 3276 454 935">
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="usr">Country</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <select name="countries" class="country-selector">
+                                            <option selected>United States</option>
+                                            <option value="volvo">Canada</option>
+                                            <option value="fiat">Ukrian</option>
+                                            <option value="audi">Argentina</option>
+                                          </select>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="usr">Language</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <div class="btn-group language-dropdown-group">
+                                            <a type="button" class="language-toggle dropdown-toggle" data-toggle="dropdown">
+                                                <span class="language-flag"><img src="images/US.svg" alt="Countries Language Flag"></span>
+                                               English(US)
+                                            </a>
+                                            <div class="dropdown-menu language-dropdown">
+                                              <a class="dropdown-item" href="#">  <span class="language-flag"><img src="images/italy.png" alt="Countries Language Flag"></span> Italiano</a>
+                                              <a class="dropdown-item" href="#">  <span class="language-flag"><img src="images/US.svg" alt="Countries Language Flag"></span> Deutsch</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                             </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                   <div class="accounts-inner">
+                    <div class="profile-text">
+                        <h3>Sign-in Method</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh morbi at aenean molestie et. </p>
+                    </div>
+                    <div class="account-form">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email Address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="oliviarhye@example.com">
+                            </div>
+                            <hr class="divider-line">
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <div class="password-feild">
+                              <input type="password" name="password" placeholder="*************" id="password" />
+                              <span class="bi bi-eye-slash" id="togglePassword">
+                                  <img src="images/eye-off.svg" alt="Eye Off Icon">
+                              </div>
+                              </span>
+                            </div>
+                          </form>
+                          <div class="save-your-account">
+                            <h5><img src="images/Shield-check.svg" alt="Shield Check Icon">Secure Your Account</h5>
+                            <div class="account-text">
+                            <p>Two-factor authentication adds an extra layer of security to your account. To log in, in addition you’ll need to provide a 6 digit code</p>
+                            <a type="button" class="enable-btn">Enable</a>
+                            </div>
+                        </div>
+                     </div>
+                   
+                   </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                 <div class="preferences-inner">
+                    <div class="first-form">
+                    <div class="profile-text">
+                        <h3>General</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh morbi at aenean molestie et. </p>
+                    </div>
+                    <div class="account-form preference-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="date Format">Date Format</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <select name="countries" class="country-selector">
+                                            <option selected>mm/dd/yyyy</option>
+                                            <option value="1/21/2022">1/21/2022</option>
+                                            <option value="2/21/2022">2/21/2022</option>
+                                            <option value="3/21/2022">3/21/2022</option>
+                                          </select>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="language">Language</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <div class="btn-group language-dropdown-group">
+                                            <a type="button" class="language-toggle dropdown-toggle" data-toggle="dropdown">
+                                                <span class="language-flag"><img src="images/US.svg" alt="Countries Language Flag"></span>
+                                               English(US)
+                                            </a>
+                                            <div class="dropdown-menu language-dropdown">
+                                              <a class="dropdown-item" href="#">  <span class="language-flag"><img src="images/italy.png" alt="Countries Language Flag"></span> Italiano</a>
+                                              <a class="dropdown-item" href="#">  <span class="language-flag"><img src="images/US.svg" alt="Countries Language Flag"></span> Deutsch</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                             </div>   
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="time format">Time Format</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <select name="countries" class="country-selector">
+                                            <option selected>24 hr</option>
+                                            <option value="24 hr">24 hr</option>
+                                            <option value="24 hr">24 hr</option>
+                                          </select>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="currency">Currency</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <select name="countries" class="country-selector">
+                                            <option selected>USD</option>
+                                            <option value="24 hr">24 hr</option>
+                                            <option value="24 hr">24 hr</option>
+                                          </select>
+                                    </div>
+                                </div>
+                             </div>
+                        </form>
+                    </div>
+                    </div>
+                    <hr class="dotted-line">
+                    <div class="second-form">
+                    <div class="profile-text">
+                        <h3>My Defaults</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh morbi at aenean molestie et. </p>
+                    </div>
+                    <div class="account-form preference-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="date Format">Default Rows per page in Table</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <select name="row" class="country-selector">
+                                            <option selected>10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                          </select>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-3">
+                                   <div class="form-group">
+                                       <label for="date Format">Default Page after Login</label>
+                                   </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <select name="row" class="country-selector">
+                                            <option selected>Home</option>
+                                            <option value="11">Home1</option>
+                                          </select>
+                                    </div>
+                                </div>
+                             </div>
+                        </form>
+                    </div>
+                    </div>
+                    <hr class="dotted-line">
+                    <div class="notifications-checkbox">
+                        <div class="profile-text">
+                            <h3>Notifications</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh morbi at aenean molestie et. </p>
+                        </div>
+                        <form>
+                        <div class="notify-label">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="type0" name="type0">
+                                <label class="custom-control-label" for="type0">RFx Publish Notification to Vendor</label>
+                             </div>
+                        </div>
+                        <div class="notify-label">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="type1" name="type1">
+                                <label class="custom-control-label" for="type1">RFx Update Notification to Vendor</label>
+                             </div>
+                        </div>
+                        <div class="notify-label">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="type3" name="type3">
+                                <label class="custom-control-label" for="type3">RFx Answers by Buyers to Vendors</label>
+                             </div>
+                        </div>
+                        <div class="notify-label">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="type4" name="type4">
+                                <label class="custom-control-label" for="type4">RFx Bid Submission notification to Vendor</label>
+                             </div>
+                        </div>
+                        <div class="save-form-btn">
+                            <button type="submit" class="cancel-btn">Cancel</button>
+                            <button type="submit" class="save-btn">Save</button>
+                        </div>
+                        </form>
+                    </div>
+                 </div>
+                </div>
+                </div>
+            </div>
+           </div>
+      </div>
+  </section>
+<!-- footer start -->
+    <footer>
+        <div class="copyright-text d-flex align-items-center justify-content-between">
+            <div class="copyright-text-left">
+                <p>Copyright Smartdocs 2022. All rights reserved
+                    <a href="#"> Privacy Policy</a>
+                </p>
+            </div>
+            <div class="copyright-text-right">
+                <ul>
+                    <li><a href="#"><img src="images/contact.svg">Contacts</a></li>
+                    <li><a href="#"><img src="images/chat.svg">Chat</a></li>
+                    <li><a href="#"><img src="images/whatsnew.svg">What’s New</a></li>
+                    <li><a href="#"><img src="images/article.svg">Articles</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</main>
+
+<!--JS-->
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
